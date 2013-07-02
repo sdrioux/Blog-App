@@ -1,12 +1,3 @@
 %h1 Edit an Existing Post
 
-= form_for @post do |p|
- = p.label :title, 'Title:'
- = p.text_field :title 
- %br
-
- = p.label :body, 'Body:'
- = p.text_field :body
- %br
-
- = p.submit
+= render partial: 'form.html.haml'
