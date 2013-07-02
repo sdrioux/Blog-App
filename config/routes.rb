@@ -3,9 +3,17 @@ SilasBlog::Application.routes.draw do
 
   get '/post/:id' =>'posts#show', as: 'post'
 
-  get '/posts/new' => 'posts#new'
+  get '/posts/new' => 'posts#new', as: 'new_post'
 
   post '/posts' => 'posts#create'
+
+  get '/posts/:id' =>'posts#edit', as: 'edit_post'
+
+  put '/post/:id' =>'posts#update'
+
+  delete '/post/:id' =>'posts#destroy'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
