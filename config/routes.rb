@@ -13,6 +13,8 @@ SilasBlog::Application.routes.draw do
 
   delete '/post/:id' =>'posts#destroy'
 
+  #resources :posts
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

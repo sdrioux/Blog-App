@@ -10,11 +10,17 @@
 
 = form_for @post do |p|
   = p.label :title, 'Title:'
+  %br
   = p.text_field :title 
   %br
 
+  = p.label :author, 'Author:'
+  %br
+  = p.text_field :author
+  %br
   = p.label :body, 'Body:'
-  = p.text_field :body
+  %br
+  = p.text_area :body
   %br
 
   = p.submit
