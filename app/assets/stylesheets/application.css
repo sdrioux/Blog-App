@@ -9,8 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require foundation_and_overrides
  *= require_tree .
  */
+ /*
 * {
 	font-family: 'Roboto Slab';
 }
@@ -58,8 +60,8 @@ a:visited {
   background-color: red;
   display: table;
 }
-
-a.button {
+*/
+/*a.button {
 display: inline-block;
 padding: 5px 10px 6px;
 color: #fff;
@@ -79,4 +81,4 @@ text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 border-bottom: 1px solid rgba(0,0,0,0.25);
 font-size: 20px;
 padding: 8px 14px 9px;
-}
+}*/
