@@ -6,8 +6,11 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'haml-rails', '>= 0.3.4'
-group :development do
+group :development, :test do
     gem 'sqlite3'
+    gem 'pry'
+    gem 'factory_girl_rails'
+    gem 'rspec-rails'
 end
 group :production do
     gem 'pg'
@@ -26,6 +29,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
