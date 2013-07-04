@@ -11,6 +11,7 @@ group :development, :test do
     gem 'pry'
     gem 'factory_girl_rails'
     gem 'rspec-rails'
+    gem 'faker'
 end
 group :production do
     gem 'pg'
