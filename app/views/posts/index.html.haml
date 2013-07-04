@@ -1,8 +1,9 @@
 %h1= "#{@name}'s Blog"
 
 - @posts.each do |post|
-  %h2= link_to post.title.upcase, post_path(post)
-.links
-  
+  %h3= link_to post.title, post_path(post)
 
-= link_to 'New Post', new_post_path, class: "button radius"
+  
+.row.collapse
+  .small-offset-4.columns
+    = link_to 'New Post', new_post_path, class: "button radius"

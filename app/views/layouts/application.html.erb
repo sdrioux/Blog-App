@@ -42,15 +42,16 @@
       <div class="small-8 columns">
         <%= yield %>
       </div>
-      <div class="small-4 columns">
-        <h2> About Me </h2>
-        <%= Faker::Lorem.paragraphs(3).join(" ") %>
+      <div class="small-4 columns panel">
+        <h2 class="subheader text-center"> About Me </h2>
+        <%= image_tag "Silas.JPG", class: 'myimage th radius', width: '180px' %>
+        <p><%= Faker::Lorem.paragraphs(1).join(" ") %></p>
+        <p><%= Faker::Lorem.paragraphs(1).join(" ") %></p>
+        <div class="flex-video">
+          <iframe width="560" height="315" src="//www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-
-    
-
-    
     <%= javascript_include_tag "application" %>
   </body>
 </html>

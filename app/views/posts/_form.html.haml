@@ -9,18 +9,27 @@
 
 
 = form_for @post do |p|
-  = p.label :title, 'Title:'
-  %br
-  = p.text_field :title 
-  %br
-
-  = p.label :author, 'Author:'
-  %br
-  = p.text_field :author
-  %br
-  = p.label :body, 'Body:'
-  %br
-  = p.text_area :body
-  %br
-
-  = p.submit
+  .row.collapse
+    .small-9.small-offset-3.columns.text-center
+      - if @post.title == nil
+        %h3 Create New Post
+      - if @post.title != nil
+        %h3 Edit Post
+  .row.collapse
+    .small-3.columns
+      = p.label :title, 'Title:', class: "right inline"
+    .small-9.columns
+      = p.text_field :title
+  .row.collapse
+    .small-3.columns
+      = p.label :author, 'Author:', class: "right inline"
+    .small-9.columns
+      = p.text_field :author
+  .row.collapse
+    .small-3.columns
+      = p.label :body, 'Body:', class: "right inline"
+    .small-9.columns
+      = p.text_area :body
+  .row
+    .small-9.small-offset-6.columns
+      = p.submit

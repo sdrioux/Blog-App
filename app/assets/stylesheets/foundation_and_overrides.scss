@@ -45,13 +45,14 @@ $default-float: left;
 // Colors
 
 // $primary-color: #2ba6cb;
+$primary-color: #212d48;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
 // Make sure border radius matches unless we want it different.
 
-// $global-radius: 3px;
+$global-radius: 8px;
 // $global-rounded: 1000px;
 
 // Inset shadow shiny edges and depressions.
@@ -1165,9 +1166,10 @@ $column-gutter: emCalc(60px);
 
 // $thumb-border-style: solid;
 // $thumb-border-width: 4px;
+$thumb-border-width: 1px;
 // $thumb-border-color: #fff;
-// $thumb-box-shadow: 0 0 0 1px rgba(#000,.2);
-// $thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.5);
+$thumb-box-shadow: 0 0 6px 1px rgba($primary-color,0.5);
+$thumb-box-shadow-hover: 0 0 6px 1px rgba($primary-color,0.9);
 
 // Radius and transition speed for thumbs
 
