@@ -1,7 +1,7 @@
 %h1= "#{@name}'s Blog"
 
 - @posts.each do |post|
-  %h3= link_to post.title, post_path(post)
+  %h4= link_to post.created_at.strftime("%m/%d/%y") + ":  " + post.title, post_path(post)
 
   
 .row.collapse
