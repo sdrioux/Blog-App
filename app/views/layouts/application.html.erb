@@ -42,6 +42,9 @@
     </nav>
     <div class="row">
       <div class="small-8 columns">
+      <% if flash[:notice].present? %>
+        <p.flash-notice><%= flash[:notice] %></p>
+    <% end %>
         <%= yield %>
       </div>
       <div class="small-4 columns panel">
