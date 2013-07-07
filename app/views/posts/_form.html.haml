@@ -8,7 +8,7 @@
         %li= msg
 
 
-= form_for @post do |p|
+= form_for @post, :html => {:multipart => true} do |p|
   .row.collapse
     .small-9.small-offset-3.columns.text-center
       - if @post.title == nil
@@ -30,6 +30,11 @@
       = p.label :body, 'Body:', class: "right inline"
     .small-9.columns
       = p.text_area :body
+  .row.collapse
+    .small-3.columns
+      = p.label :picture, 'Picture', class: "right inline"
+    .small-9.columns
+      = p.file_field :picture
   .row
     .small-9.small-offset-6.columns
       = p.submit
