@@ -1,8 +1,9 @@
 .wrapper
   %h1=@post.title
   %h3=@post.author
-  %p.blogtext=@post.body
-  =image_tag @post.picture_url.to_s, class: "blog-pic"
+  %p.blogtext=simple_format(@post.body)
+  -if @post.picture_url !=nil
+    =image_tag @post.picture_url.to_s, class: "blog-pic"
 
   .links
     = link_to 'Home', posts_path
