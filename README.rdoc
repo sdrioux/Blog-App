@@ -1,6 +1,6 @@
 ==BLOG-APP
 
-Dummy blog created as a student at MakerSquare.  Used to develop my understanding of test driven development.
+Dummy blog created as a student at linklabel[MakerSquare:http://www.themakersquare.com].  Uses Zurb Foundation as framework.  Used to develop my understanding of test driven development.
 
 Uses rspec unit tests for each blog post.  Also uses FactoryGirl and Faker to develop detailed factories for testing, such as the following: 
 
@@ -11,3 +11,5 @@ Uses rspec unit tests for each blog post.  Also uses FactoryGirl and Faker to de
       author Faker::Name.name
     end  
   end
+
+Also uses carrierwave to upload pictures with each blog post.
