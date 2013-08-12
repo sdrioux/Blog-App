@@ -2,7 +2,7 @@
 
 Dummy blog created as a student at MakerSquare[link:http://www.themakersquare.com].  Uses Zurb Foundation as framework.  Used to develop my understanding of test driven development.
 
-Uses rspec unit tests for each blog post.  Also uses FactoryGirl and Faker to develop detailed factories for testing, such as the following: 
+Uses rspec unit tests for each blog post.  Also uses FactoryGirl[link:https://github.com/thoughtbot/factory_girl] and Faker[link:http://faker.rubyforge.org/] to develop detailed factories for testing, such as the following: 
 
   FactoryGirl.define do
     factory :post do
@@ -12,4 +12,4 @@ Uses rspec unit tests for each blog post.  Also uses FactoryGirl and Faker to de
     end  
   end
 
-Also uses carrierwave to upload pictures with each blog post.
+Also uses Carrierwave[link:https://github.com/carrierwaveuploader/carrierwave] to upload pictures with each blog post.
