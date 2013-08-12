@@ -3,3 +3,11 @@
 Dummy blog created as a student at MakerSquare.  Used to develop my understanding of test driven development.
 
 Uses rspec unit tests for each blog post.  Also uses FactoryGirl and Faker to develop detailed factories for testing, such as the following: 
+
+FactoryGirl.define do
+  factory :post do
+    title Faker::Lorem.words(5).map!{|x|x.capitalize}.join(" ")
+    body Faker::Lorem.paragraphs(3).join(" ")
+    author Faker::Name.name
+  end  
+end
